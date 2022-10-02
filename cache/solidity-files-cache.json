@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\contracts\\Token.sol": {
-      "lastModificationDate": 1664650908545,
+    "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\contracts\\Main.sol": {
+      "lastModificationDate": 1664651366231,
       "contentHash": "1ebe34a6691a4797feff145595632281",
-      "sourceName": "contracts/Token.sol",
+      "sourceName": "contracts/Main.sol",
       "solcConfig": {
         "version": "0.8.8",
         "settings": {
@@ -79,6 +79,41 @@
       ],
       "artifacts": [
         "ERC721"
+      ]
+    },
+    "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1664650960055,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.8",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
       ]
     },
     "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
@@ -184,41 +219,6 @@
       ],
       "artifacts": [
         "Strings"
-      ]
-    },
-    "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
-      "lastModificationDate": 1664650960055,
-      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
-      "solcConfig": {
-        "version": "0.8.8",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Receiver"
       ]
     },
     "C:\\Users\\Пользователь\\Desktop\\Мои файлы\\Учеба 4 курс\\СМК\\HomeWork\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
