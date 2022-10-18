@@ -1,5 +1,6 @@
 const Web3 = require('web3')
-var web3 = new Web3(new Web3.providers.HttpProvider("{https://eth-goerli.alchemyapi.io/v2/pYBXZgp7XEsNF0PYoE-F4giWojft7h2F}"));
+var web3 = new Web3(new Web3.providers.HttpProvider("https://eth-goerli.alchemyapi.io/v2/pYBXZgp7XEsNF0PYoE-F4giWojft7h2F"));
+const account = "0x91cDa83c363A6F72f81A2041836b1e79b4a01Ab1";
 const address = "0x241a8b777ECAa60540C66CC82a25955f12eDC212";
 const ABI = [
 	{
@@ -328,6 +329,11 @@ const ABI = [
 		"type": "function"
 	}
 ];
-web3.eth.getBalance().then(console.log) // проверяем
+web3.eth.getBalance(account).then(console.log) // проверяем
 const myContract = new web3.eth.Contract(ABI, address)
 myContract.methods.getCount().call().then(console.log)
+myContract.getPastEvents('ValueChanged', {
+		filter: {},
+		fromBlock: 0,
+		toBlock: 'latest'
+	}, function(error, events){ console.log(events); });
