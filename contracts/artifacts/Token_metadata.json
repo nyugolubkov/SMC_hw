@@ -72,6 +72,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldValue",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newValue",
+						"type": "uint256"
+					}
+				],
+				"name": "ValueChanged",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -176,6 +195,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -196,6 +228,13 @@
 						"type": "bool"
 					}
 				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "increment",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -386,11 +425,11 @@
 			]
 		},
 		"contracts/Token.sol": {
-			"keccak256": "0x83427cec5ae6bcc903e7efdaea0f8e2eb5b431c2c91bb29afe7db7b6da5e2402",
+			"keccak256": "0xb50be79e27a40795ba71d833dc6fc776b7a37323ed9b3b83ebebb20b16ef1faf",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://94719a693637c416bc3dd150fabe62ef09960c151322132e65a4a38bc80b7730",
-				"dweb:/ipfs/QmRWrXpWQ2ya1Mu8fjb1dzWrducnL6FtGZMxS3569KcuKG"
+				"bzz-raw://a51e7051c0ce1ad6ff24c452da9924fe6a0fc273a13770c71bd4296806a369cf",
+				"dweb:/ipfs/QmVcXpCVmdtZF9etrwn3813FBEwW5RdmdEYQHs65Qd6d5d"
 			]
 		}
 	},

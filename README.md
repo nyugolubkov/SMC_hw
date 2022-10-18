@@ -1,4 +1,4 @@
-0xd944486d5000334d466a890201fCce97c14cd262
+0x241a8b777ECAa60540C66CC82a25955f12eDC212
 [
 	{
 		"inputs": [
@@ -64,6 +64,25 @@
 			}
 		],
 		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "oldValue",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "newValue",
+				"type": "uint256"
+			}
+		],
+		"name": "ValueChanged",
 		"type": "event"
 	},
 	{
@@ -171,6 +190,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "getCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -191,6 +223,13 @@
 				"type": "bool"
 			}
 		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "increment",
+		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
