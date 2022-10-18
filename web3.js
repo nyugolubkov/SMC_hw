@@ -1,5 +1,7 @@
-0xd944486d5000334d466a890201fCce97c14cd262
-[
+const Web3 = require('web3')
+var web3 = new Web3(new Web3.providers.HttpProvider("{https://eth-goerli.alchemyapi.io/v2/pYBXZgp7XEsNF0PYoE-F4giWojft7h2F}"));
+const address = "0xd944486d5000334d466a890201fCce97c14cd262";
+const ABI = [
 	{
 		"inputs": [
 			{
@@ -286,4 +288,7 @@
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-]
+];
+web3.eth.getBalance().then(console.log) // проверяем
+const myContract = new web3.eth.Contract(ABI, address)
+myContract.methods.{название_вашего_метода}().call().then(console.log)
